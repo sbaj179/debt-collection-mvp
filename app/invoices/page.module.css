@@ -1,0 +1,120 @@
+.wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.9rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.65rem;
+}
+
+.builderGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 0.9rem;
+}
+
+.fieldGrid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.inlineGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.65rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field > label {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.fieldError {
+  color: #f87171;
+  font-size: 12px;
+}
+
+.itemRow {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 0.8fr auto;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.searchList {
+  max-height: 180px;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 0.4rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.searchItem {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+}
+
+.totalsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.recentTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recentTable th,
+.recentTable td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.45rem;
+  text-align: left;
+  font-size: 13px;
+}
+
+@media (max-width: 920px) {
+  .builderGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .itemRow {
+    grid-template-columns: 1fr;
+  }
+}
