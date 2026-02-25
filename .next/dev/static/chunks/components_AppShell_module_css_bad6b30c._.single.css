@@ -1,0 +1,73 @@
+/* [project]/components/AppShell.module.css [app-client] (css) */
+.AppShell-module__JCX2KW__page {
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+  display: grid;
+}
+
+.AppShell-module__JCX2KW__sidebar {
+  border-right: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(var(--blur));
+  backdrop-filter: blur(var(--blur));
+  background: #0d111bb3;
+  padding: 1.2rem;
+}
+
+.AppShell-module__JCX2KW__sidebar nav {
+  gap: .5rem;
+  margin-top: 1rem;
+  display: grid;
+}
+
+.AppShell-module__JCX2KW__sidebar a {
+  color: var(--text-muted);
+  border-radius: 12px;
+  padding: .6rem .8rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.AppShell-module__JCX2KW__sidebar a:hover, .AppShell-module__JCX2KW__active {
+  color: var(--text);
+  box-shadow: var(--shadow);
+  background: #7088ff33;
+}
+
+.AppShell-module__JCX2KW__content {
+  padding: 1.5rem;
+}
+
+.AppShell-module__JCX2KW__header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.AppShell-module__JCX2KW__header button {
+  background: linear-gradient(90deg, var(--accent), #59c8ff);
+  color: #061126;
+  border: 0;
+  border-radius: 999px;
+  padding: .6rem .9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .AppShell-module__JCX2KW__page {
+    grid-template-columns: 1fr;
+  }
+
+  .AppShell-module__JCX2KW__sidebar {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+  }
+
+  .AppShell-module__JCX2KW__sidebar nav {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: .8rem;
+  }
+}
+
+/*# sourceMappingURL=components_AppShell_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,59 @@
+.authPage {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(1200px 800px at 20% 10%, rgba(140, 90, 255, 0.25), transparent),
+              radial-gradient(900px 700px at 80% 30%, rgba(45, 248, 255, 0.18), transparent),
+              linear-gradient(180deg, #070016, #120032);
+  color: #f6f1ff;
+}
+
+.panel {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  box-shadow: 0 22px 60px rgba(0,0,0,0.45);
+}
+
+.authPanel { width: min(480px, 100%); padding: 18px; }
+.muted { opacity: 0.75; margin-top: 6px; }
+
+.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 14px 0 10px; }
+.tab {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: inherit;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.tab.active { border-color: rgba(255,79,163,0.5); box-shadow: 0 0 0 3px rgba(255,79,163,0.12); }
+
+.form { display: grid; gap: 12px; margin-top: 10px; }
+.field { display: grid; gap: 6px; }
+.field span { font-size: 13px; opacity: 0.85; }
+
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.22);
+  color: inherit;
+  outline: none;
+}
+input:focus { border-color: rgba(45,248,255,0.55); box-shadow: 0 0 0 3px rgba(45,248,255,0.12); }
+
+.btn {
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.08);
+  color: inherit;
+  cursor: pointer;
+}
+.btn.primary { border-color: rgba(255,79,163,0.55); background: linear-gradient(90deg, rgba(255,79,163,0.32), rgba(139,92,255,0.28)); }
+
+.notice { margin-top: 6px; opacity: 0.9; font-size: 13px; }

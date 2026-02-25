@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/StatsGrid.module.css"],"sourcesContent":[".grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, minmax(0, 1fr));\r\n  gap: 1rem;\r\n}\r\n\r\n.card {\r\n  background: var(--card);\r\n  border: 1px solid var(--border);\r\n  border-radius: var(--radius);\r\n  padding: 1rem;\r\n  backdrop-filter: blur(var(--blur));\r\n}\r\n\r\n.card span {\r\n  color: var(--text-muted);\r\n  font-size: 0.9rem;\r\n}\r\n\r\n.card strong {\r\n  display: block;\r\n  margin-top: 0.4rem;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n@media (max-width: 900px) {\r\n  .grid {\r\n    grid-template-columns: repeat(2, minmax(0, 1fr));\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;AAQA;;;;;AAKA;;;;;;AAMA;EACE"}}]
+}

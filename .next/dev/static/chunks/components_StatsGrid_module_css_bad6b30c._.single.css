@@ -1,0 +1,34 @@
+/* [project]/components/StatsGrid.module.css [app-client] (css) */
+.StatsGrid-module__bQYPSa__grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  display: grid;
+}
+
+.StatsGrid-module__bQYPSa__card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  -webkit-backdrop-filter: blur(var(--blur));
+  backdrop-filter: blur(var(--blur));
+  padding: 1rem;
+}
+
+.StatsGrid-module__bQYPSa__card span {
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
+.StatsGrid-module__bQYPSa__card strong {
+  margin-top: .4rem;
+  font-size: 1.4rem;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .StatsGrid-module__bQYPSa__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/*# sourceMappingURL=components_StatsGrid_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,42 @@
+/* [project]/styles/globals.css [app-client] (css) */
+:root {
+  --bg: #070b14;
+  --card: #111827ad;
+  --text: #f2f7ff;
+  --text-muted: #98a7c1;
+  --accent: #8ea0ff;
+  --danger: #ff6f91;
+  --success: #47e2af;
+  --border: #94a3b847;
+  --radius: 16px;
+  --blur: 16px;
+  --shadow: 0 12px 30px #070b148c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text);
+  background: radial-gradient(circle at 20% 15%, #1a2362 0%, #070b14 38%), radial-gradient(circle at 80% 5%, #0d3e50 0%, #0000 35%), #070b14;
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=styles_globals_9fb35f7d.css.map*/

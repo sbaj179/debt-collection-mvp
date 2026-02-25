@@ -1,0 +1,77 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/AppShell.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.AppShell_page__Ab551 {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+.AppShell_sidebar__3Yyf_ {
+  padding: 1.2rem;
+  border-right: 1px solid var(--border);
+  background: rgba(13, 17, 27, 0.7);
+  -webkit-backdrop-filter: blur(var(--blur));
+          backdrop-filter: blur(var(--blur));
+}
+
+.AppShell_sidebar__3Yyf_ nav {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+}
+
+.AppShell_sidebar__3Yyf_ a {
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.AppShell_sidebar__3Yyf_ a:hover,
+.AppShell_active__QWaTX {
+  color: var(--text);
+  background: rgba(112, 136, 255, 0.2);
+  box-shadow: var(--shadow);
+}
+
+.AppShell_content__SIDnm {
+  padding: 1.5rem;
+}
+
+.AppShell_header__9rKGM {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.AppShell_header__9rKGM button {
+  background: linear-gradient(90deg, var(--accent), #59c8ff);
+  color: #061126;
+  border: 0;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .AppShell_page__Ab551 {
+    grid-template-columns: 1fr;
+  }
+
+  .AppShell_sidebar__3Yyf_ {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .AppShell_sidebar__3Yyf_ nav {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 0.8rem;
+  }
+}
+
